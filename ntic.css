@@ -27,7 +27,7 @@ body {
 		background-image: url("fond.jpg");
 		border:1px solid black;
 		margin-top:-1px;
-		padding:5px;
+		padding-bottom:100%;
 		display:none;
 	}
 ul
@@ -49,6 +49,6 @@ h1
 
 .illustration2 {
 		float: left;
-		overflow: hidden ;
 		max-width:300px;
 	}
+
