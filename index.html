@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>NTIC</title>
+    <link rel="stylesheet" type="text/css" href="ntic.css">
+    <script type="text/javascript">
+	//<!--
+		function change_onglet(name)
+		{
+			document.getElementById('onglet_'+anc_onglet).className = 'onglet_0 onglet';
+			document.getElementById('onglet_'+name).className = 'onglet_1 onglet';
+			document.getElementById('contenu_onglet_'+anc_onglet).style.display = 'none';
+			document.getElementById('contenu_onglet_'+name).style.display = 'block';
+			anc_onglet = name;
+		}
+	//-->
+	</script>
+    <style type="text/css">
+	
+	</style>
+</head>
+<body>
+	<div class="systeme_onglets">
+        <div class="onglets">
+            <span class="onglet_0 onglet" id="onglet_quoi" onclick="javascript:change_onglet('quoi');">Quoi</span>
+            <span class="onglet_0 onglet" id="onglet_demo" onclick="javascript:change_onglet('demo');">Démo</span>
+            <span class="onglet_0 onglet" id="onglet_contact" onclick="javascript:change_onglet('contact');">Contact</span>
+            <span class="onglet_0 onglet" id="onglet_concepteur" onclick="javascript:change_onglet('concepteur');">Concepteur</span>
+        </div>
+        <div class="contenu_onglets">
+            <div class="contenu_onglet" id="contenu_onglet_quoi">
+            	<h1>Présentation</h1>
+            	<img class="illustration" src="illustration.jpg" alt="illustration NTIC">
+            	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            	<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend risus eros, id sodales libero porttitor ut. Nulla quis justo eu nibh posuere cursus. Donec porta libero non elit aliquam, id consectetur purus malesuada. Praesent ut erat vitae eros pulvinar lobortis ac consectetur quam. Morbi convallis viverra lacinia. Nam in ante nunc. Duis sed dui condimentum, tincidunt erat non, feugiat augue.
+				</p>
+				<p>
+				Sed luctus tortor quis odio fermentum ornare. Quisque leo nisi, molestie non ligula sit amet, pretium hendrerit dolor. Praesent fermentum magna eu molestie efficitur. Suspendisse vel ligula vulputate quam finibus congue eget in magna. Curabitur ut ante lorem. Fusce convallis elit tellus, sed interdum velit facilisis in. Ut eros odio, vulputate ac fringilla cursus, iaculis eu ex.
+				</p>
+				<img class="illustration2" src="illustration2.jpg" alt="illustration2">
+				<p>
+				Maecenas lacinia massa at sapien mattis, sed semper dolor aliquet. Ut euismod consequat quam eu feugiat. Praesent vitae lobortis diam. Phasellus at ornare nunc, ac aliquam arcu. Vestibulum a augue justo. Etiam vel purus a nibh gravida aliquet. Vivamus eu posuere risus. Curabitur posuere diam sed finibus maximus. Donec porttitor id ante sit amet efficitur. Aliquam eleifend sollicitudin dui, sed feugiat felis finibus ac. Sed ut lorem cursus, hendrerit tellus at, tincidunt quam.
+				</p>
+				<p>
+				Cras lacinia vulputate purus, rutrum dapibus justo iaculis non. Ut maximus tellus molestie dolor scelerisque, in mollis elit aliquet. Vivamus vitae eros id nulla pellentesque lacinia ac non eros. Nunc vestibulum, dolor in sagittis pharetra, urna nibh rutrum quam, sit amet aliquam eros neque vitae nibh. Nullam at dapibus magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce malesuada odio nibh, a scelerisque velit vehicula non.
+				</p>
+				<p>
+				Curabitur pretium auctor enim. In eu ultrices diam. Vestibulum in dictum velit. Morbi nec vehicula purus. Suspendisse eget nunc a nisi interdum dapibus. Fusce vel ex sollicitudin, fermentum quam ut, ullamcorper ante. Aenean id sodales quam, sed aliquam enim. Duis ut luctus ligula.
+				</p>
+                </ul>
+            </div>
+            <div class="contenu_onglet" id="contenu_onglet_contact">
+                <h1>Formulaire de contact</h1>
+                	<form action="#">
+                		<div>
+                			<label for="nom">Nom :</label><br>
+                			<input type="text" id="nom" placeholder="Entrez votre nom" />
+                		</div>
+        				<div>
+                			<label for="prenom">Prénom :</label><br>
+                			<input type="text" id="prenom" placeholder="Entrez votre prénom" />
+                		</div>
+                		<div>
+                			<label for="numero">Numéro de téléphone :</label><br>
+                			<input type="tel" id="numero" placeholder="Entrez votre numéro de téléphone" />
+                		</div>
+                		<div>
+                			<label for="email">E-mail :</label><br>
+                			<input type="email" id="email" placeholder="Entrez votre adresse mail" />
+                		</div>
+                		<div>
+                		    <label for="message">Message :</label><br>
+                		    <textarea id="message" cols="50" rows="10"></textarea>
+                		</div>
+                		<div class="button">
+                		    <button type="submit">Envoyez votre message</button>
+                		</div>
+                	</form>
+            </div>
+            <div class="contenu_onglet" id="contenu_onglet_demo">
+            	<h1>Démo</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0nY11gBQ4yk" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="contenu_onglet" id="contenu_onglet_concepteur">
+            	<h1>Présentation du concepteur</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend risus eros, id sodales libero porttitor ut. Nulla quis justo eu nibh posuere cursus. Donec porta libero non elit aliquam, id consectetur purus malesuada. Praesent ut erat vitae eros pulvinar lobortis ac consectetur quam. Morbi convallis viverra lacinia. Nam in ante nunc. Duis sed dui condimentum, tincidunt erat non, feugiat augue.
+				</p>
+				<p>
+				Sed luctus tortor quis odio fermentum ornare. Quisque leo nisi, molestie non ligula sit amet, pretium hendrerit dolor. Praesent fermentum magna eu molestie efficitur. Suspendisse vel ligula vulputate quam finibus congue eget in magna. Curabitur ut ante lorem. Fusce convallis elit tellus, sed interdum velit facilisis in. Ut eros odio, vulputate ac fringilla cursus, iaculis eu ex.
+				</p>
+				<p>
+				Maecenas lacinia massa at sapien mattis, sed semper dolor aliquet. Ut euismod consequat quam eu feugiat. Praesent vitae lobortis diam. Phasellus at ornare nunc, ac aliquam arcu. Vestibulum a augue justo. Etiam vel purus a nibh gravida aliquet. Vivamus eu posuere risus. Curabitur posuere diam sed finibus maximus. Donec porttitor id ante sit amet efficitur. Aliquam eleifend sollicitudin dui, sed feugiat felis finibus ac. Sed ut lorem cursus, hendrerit tellus at, tincidunt quam.
+				</p>
+				<p>
+				Cras lacinia vulputate purus, rutrum dapibus justo iaculis non. Ut maximus tellus molestie dolor scelerisque, in mollis elit aliquet. Vivamus vitae eros id nulla pellentesque lacinia ac non eros. Nunc vestibulum, dolor in sagittis pharetra, urna nibh rutrum quam, sit amet aliquam eros neque vitae nibh. Nullam at dapibus magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce malesuada odio nibh, a scelerisque velit vehicula non.
+				</p>
+				<p>
+				Curabitur pretium auctor enim. In eu ultrices diam. Vestibulum in dictum velit. Morbi nec vehicula purus. Suspendisse eget nunc a nisi interdum dapibus. Fusce vel ex sollicitudin, fermentum quam ut, ullamcorper ante. Aenean id sodales quam, sed aliquam enim. Duis ut luctus ligula.
+				</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+	//<!--
+		var anc_onglet = 'quoi';
+		change_onglet(anc_onglet);
+	//-->
+	</script>
+</body>
+</html>
