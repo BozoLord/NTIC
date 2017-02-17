@@ -1,7 +1,8 @@
 
 <!DOCTYPE html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>NTIC</title>
     <link rel="stylesheet" type="text/css" href="ntic.css">
     <script type="text/javascript">
@@ -24,15 +25,15 @@
 	<div class="systeme_onglets">
         <div class="onglets">
             <span class="onglet_0 onglet" id="onglet_quoi" onclick="javascript:change_onglet('quoi');">Quoi</span>
-            <span class="onglet_0 onglet" id="onglet_demo" onclick="javascript:change_onglet('demo');">Démo</span>
-            <span class="onglet_0 onglet" id="onglet_contact" onclick="javascript:change_onglet('contact');">Contact</span>
+            <span class="onglet_0 onglet" id="onglet_demo" onclick="javascript:change_onglet('demo');">Démo</span> 
             <span class="onglet_0 onglet" id="onglet_concepteur" onclick="javascript:change_onglet('concepteur');">Concepteur</span>
+            <span class="onglet_0 onglet" id="onglet_contact" onclick="javascript:change_onglet('contact');">Contact</span>
         </div>
         <div class="contenu_onglets">
             <div class="contenu_onglet" id="contenu_onglet_quoi">
             	<h1>Présentation</h1>
             	<img class="illustration" src="illustration.jpg" alt="illustration NTIC">
-            	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            	<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -86,11 +87,14 @@
             </div>
             <div class="contenu_onglet" id="contenu_onglet_demo">
             	<h1>Démo</h1>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0nY11gBQ4yk" frameborder="0" allowfullscreen></iframe>
+                <div class="video_container">
+                    <iframe class="video" src="https://www.youtube.com/embed/0nY11gBQ4yk" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
             <div class="contenu_onglet" id="contenu_onglet_concepteur">
             	<h1>Présentation du concepteur</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend risus eros, id sodales libero porttitor ut. Nulla quis justo eu nibh posuere cursus. Donec porta libero non elit aliquam, id consectetur purus malesuada. Praesent ut erat vitae eros pulvinar lobortis ac consectetur quam. Morbi convallis viverra lacinia. Nam in ante nunc. Duis sed dui condimentum, tincidunt erat non, feugiat augue.
+            	<img class="portrait" src="portrait.jpg" alt="portrait">
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend risus eros, id sodales libero porttitor ut. Nulla quis justo eu nibh posuere cursus. Donec porta libero non elit aliquam, id consectetur purus malesuada. Praesent ut erat vitae eros pulvinar lobortis ac consectetur quam. Morbi convallis viverra lacinia. Nam in ante nunc. Duis sed dui condimentum, tincidunt erat non, feugiat augue.
 				</p>
 				<p>
 				Sed luctus tortor quis odio fermentum ornare. Quisque leo nisi, molestie non ligula sit amet, pretium hendrerit dolor. Praesent fermentum magna eu molestie efficitur. Suspendisse vel ligula vulputate quam finibus congue eget in magna. Curabitur ut ante lorem. Fusce convallis elit tellus, sed interdum velit facilisis in. Ut eros odio, vulputate ac fringilla cursus, iaculis eu ex.
